@@ -1,2 +1,2 @@
-# pokedex
-Pokedex
+# pokédex 🔴
+Gotta Catch 'Em All!
