@@ -85,7 +85,7 @@ const Home = ({ navigation }) => {
                     pokemons.length > 0 ?
                         pokemons.map(p => {
                             return (
-                                <TouchableOpacity key={p.id} activeOpacity={.9} style={{ flexDirection: 'row', width: dWidth * 0.87, height: 130, backgroundColor: p.color1, borderRadius: 15, marginTop: 15, elevation: 3 }}>
+                                <TouchableOpacity onPress={()=> navigation.navigate('PokemonDetail', {pokemon: p})} key={p.id} activeOpacity={.9} style={{ flexDirection: 'row', width: dWidth * 0.87, height: 130, backgroundColor: p.color1, borderRadius: 15, marginTop: 15, elevation: 3 }}>
                                     <View style={{ width: dWidth * 0.45, alignSelf: 'center', marginLeft: 20 }}>
                                         <View>
                                             <Image source={require('../../../resources/img/white.png')} style={{ width: 180, height: 180, resizeMode: 'cover', position: 'absolute', opacity: .3, marginTop: -38, marginLeft: 155 }} />
